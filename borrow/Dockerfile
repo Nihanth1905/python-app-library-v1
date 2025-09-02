@@ -11,5 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy service code
 COPY . .
 
+EXPOSE 5003
 # Default command (will be overridden in docker-compose)
 CMD ["python", "borrow_service.py"]
